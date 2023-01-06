@@ -1,6 +1,7 @@
 import React from "react";
 import UndrawBooks from '../assets/Undraw_Books.svg'
-export default function Landing() {
+
+const Landing = () => {
   return (
     <section id="landing">
       <header>
@@ -10,7 +11,9 @@ export default function Landing() {
             <h2>
               Find your dream book with <span className="purple">Library</span>
             </h2>
-            <a href="#features"></a>
+            <a href="#features">
+              <button className="btn">Browse Books</button>
+            </a>
           </div>
           <figure className="header__img--wrapper">
             <img src={UndrawBooks} alt="" />
@@ -20,3 +23,5 @@ export default function Landing() {
     </section>
   );
 }
+
+export default Landing
