@@ -29,7 +29,7 @@ const BookInfo = ({ books, addItemToCart }) => {
               </figure>
               <div className="book__selected--description">
                 <h2 className="book__selected--title">{book.title}</h2>
-                <Ratings rating={book.rating} />
+                <Rating rating={book.rating} />
                 <div className="book__selected--price">
                   <Price
                     originalPrice={book.originalPrice}
